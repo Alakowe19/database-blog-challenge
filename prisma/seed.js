@@ -4,8 +4,8 @@ const prisma = new PrismaClient();
 async function seed() {
     const createdUsers = await prisma.user.createMany({
         data: [
-            { username: 'alicemartin' }, //10 characters
-            { username: 'alicemartin' } //10characters
+            { username: 'Bob' }, 
+            { username: 'alice' } 
         ]
     });
 
